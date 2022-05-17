@@ -4,11 +4,12 @@ const TypingEffect = () => {
   return (
     <div>
       <h2>
-        <span>Hello World , I am</span>
+        <span>Hello World , I am </span>
         <ReactTypingEffect
           text={["Student.", "Frontend Developer"]}
-          speed={100}
+          speed={200}
           eraseDelay={10}
+          eraseSpeed={200}
         />
       </h2>
     </div>

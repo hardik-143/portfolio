@@ -7,6 +7,7 @@ import FadeIn from "react-fade-in/lib/FadeIn";
 import styled, { keyframes } from "styled-components";
 import { rubberBand } from "react-animations";
 import NavMenu from "./NavMenu";
+// import Cursor from "./Cursor";
 const bounceAnimation = keyframes`${rubberBand}`;
 const BouncyDiv = styled.div`
   :hover {
@@ -14,7 +15,7 @@ const BouncyDiv = styled.div`
   }
 `;
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -47,6 +48,7 @@ const Navbar = () => {
                 );
               })}
             </FadeIn>
+            {/* <Cursor /> */}
             <div
               className={`nav-menu customMenu ${isMenuOpen ? "opened" : ""}`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}

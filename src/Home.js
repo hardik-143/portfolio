@@ -4,8 +4,8 @@ import TypingEffect from "./components/TypingEffect";
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
-      <TypingEffect />
+      Home
+      {/* <TypingEffect /> */}
     </div>
   );
 };

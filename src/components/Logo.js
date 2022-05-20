@@ -1,12 +1,10 @@
 import React from "react";
-import { CodeIcon } from "../Icons";
-
+import StyledLogo from "../styled/StyledLogo";
 const Logo = () => {
   return (
-    <div className="logo">
-      <h1 className="m-0">H</h1>
-      <CodeIcon />
-    </div>
+    <StyledLogo className="logo">
+      <h1 className="logo-text">H<span>ardik</span></h1>
+    </StyledLogo>
   );
 };
 
